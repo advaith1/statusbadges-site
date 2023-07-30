@@ -1,0 +1,140 @@
+@import './bulma'
+
+html
+	overflow-y: auto
+
+html, body 
+	background: black
+
+main.home
+	display: flex
+	flex-direction: column
+	gap: 9em
+	align-items: center
+	padding: 6rem
+
+	@media screen and (max-height: 1266px)
+		gap: 8em
+
+	@media screen and (max-height: 1218px)
+		gap: 7em
+
+	@media screen and (max-height: 1174px)
+		gap: 6em
+
+	@media screen and (max-height: 1098px)
+		gap: 5em
+
+	@media screen and (max-height: 1050px)
+		padding: 5rem
+
+	@media screen and (max-height: 1018px)
+		padding: 4rem
+
+	@media screen and (max-height: 986px)
+		padding: 3rem
+
+	@media screen and (max-height: 954px)
+		gap: 4em
+
+.home-hero .title
+	color: $text
+	font-size: 7em
+	margin-bottom: 1em
+
+	@media screen and (max-height: 1174px)
+		margin-bottom: .75em
+
+	@media screen and (max-width: 854px)
+		font-size: 6em
+
+	@media screen and (max-width: 697px)
+		font-size: 5em
+
+	@media screen and (max-width: 589px)
+		font-size: 4em
+
+	@media screen and (max-width: 480px)
+		font-size: 3em
+
+	@media screen and (max-width: 372px)
+		font-size: 2em
+
+.home-hero .subtitle
+	font-size: 2em
+	margin-top: 1rem !important
+
+	@media screen and (max-width: 768px)
+		font-size: 1.5em
+
+.cta
+	font-size: 3em
+	border-radius: 15px
+
+	@media screen and (max-width: 768px)
+		font-size: 2em
+
+.disclaimer
+	margin-top: 1em
+	font-size: .8em
+
+.examples
+	display: flex
+	gap: 1em
+	justify-content: center
+
+	@media screen and (max-width: 1000px)
+		flex-wrap: wrap
+
+#ex3
+	display: contents
+
+	@media screen and (max-width: 1000px) and (min-width: 500px)
+		display: flex
+		gap: 1em
+		justify-content: center
+
+#ex2
+	display: contents
+
+	@media screen and (max-width: 500px)
+		display: flex
+		gap: 1em
+		justify-content: center
+
+.checkbox
+	gap: 10px
+	display: flex
+	user-select: none
+
+	input
+		width: 1.2em
+
+pre
+	margin-top: 10px
+	margin-bottom: 25px
+
+.format-buttons
+	margin-bottom: 20px
+
+a:focus
+	color: white !important
+
+.select select:hover
+	border-color: #121212
+
+a.link:hover
+	text-decoration: underline
+
+.endpoint
+	color: white
+	font-size: 1.1em
+	background: none
+	padding: 0 0 1em 0
+	display: block
+
+.docs-badge-list img
+	margin-right: 10px
+
+.navbar
+	height: 56px

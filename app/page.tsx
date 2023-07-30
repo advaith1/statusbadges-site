@@ -1,95 +1,71 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import Link from 'next/link'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<main className="home px-0">
+			<section className="hero home-hero">
+				<div className="hero-body">
+					<h1 className="title has-text-centered">
+						StatusBadges
+					</h1>
+					<p className="subtitle has-text-centered">
+						Shields-style badges showing what you&apos;re doing, powered by Discord
+					</p>
+				</div>
+			</section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+			<section className="has-text-centered">
+				<Link className="button is-primary cta" href="/start">
+					<span className="icon is-small">
+						<FontAwesomeIcon icon={faRocket} />
+					</span>
+					<span>Get Started</span>
+				</Link>
+				<p className="disclaimer">
+					To access your presence, you&apos;ll be added to our Discord server.
+				</p>
+			</section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+			<section className="examples px-5">
+				<span id="ex3">
+				<span id="ex2">
+				<Image
+					src="/example-badges/status.svg"
+					alt="currently online"
+					width={204}
+					height={40}
+				/>
+				<Image
+					src="/example-badges/playing.svg"
+					alt="playing Minecraft"
+					width={220}
+					height={40}
+				/>
+				</span>
+				<Image
+					src="/example-badges/vscode.svg"
+					alt="coding app.ts in statusbadges"
+					width={398}
+					height={40}
+				/>
+				</span>
+				<Image
+					src="/example-badges/spotify.svg"
+					alt="listening to Am I Dreaming by Metro Boomin, A$AP Rocky, and Roisee"
+					width={854}
+					height={40}
+				/>
+			</section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+			<section>
+			<p className="subtitle has-text-centered">
+				Created by <a href="https://advaith.io" target="_blank" rel="noopener" className="link">advaith</a>
+			</p>
+			</section>
+		</main>
+	)
 }
