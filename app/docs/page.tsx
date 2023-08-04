@@ -262,6 +262,55 @@ export default function Start() {
 							</tr>
 						</tbody>
 					</table>
+					
+					<h3 className="title">Crunchyroll</h3>
+					<code className="endpoint">https://api.statusbadges.me<wbr />/badge<wbr />/crunchyroll<wbr />/:id</code>
+					<p className="docs-badge-list mb-1">
+						<img src="/example-badges/crunchyroll.svg" alt="watching TONIKAWA: Over The Moon For You" />
+						<img src="/example-badges/crunchyroll-nothing.svg" alt="watching nothing rn" />
+					</p>
+					<p className="mb-1">Query Params</p>
+					<table className="table">
+						<thead>
+							<tr>
+								<th>Param</th>
+								<th>Description</th>
+								<th>Default</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>label</td>
+								<td>the text on the left side</td>
+								<td>listening to</td>
+							</tr>
+							<tr>
+								<td>fallback</td>
+								<td>text to show on the left side if Crunchyroll isn&apos;t in use</td>
+								<td>nothing rn</td>
+							</tr>
+							<tr>
+								<td>labelColor</td>
+								<td>the color of the left side</td>
+								<td>gray</td>
+							</tr>
+							<tr>
+								<td>color</td>
+								<td>the color of the right side</td>
+								<td>#f47521</td>
+							</tr>
+							<tr>
+								<td>style</td>
+								<td>flat, flat-square, plastic, for-the-badge, or social</td>
+								<td>flat</td>
+							</tr>
+							<tr>
+								<td>hideLogo</td>
+								<td>whether to disable the Spotify logo</td>
+								<td>false</td>
+							</tr>
+						</tbody>
+					</table>
 
 					<h2 className="title is-2">Open Spotify</h2>
 					<code className="endpoint">https://api.statusbadges.me<wbr />/openspotify<wbr />/:id</code>

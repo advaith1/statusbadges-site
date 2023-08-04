@@ -146,6 +146,10 @@ export default function Start() {
 						Link to song
 					</label></p>
 					<pre><code>{generateCode('spotify', badgeURL('spotify'), linkSong && songURL)}</code></pre>
+
+					<p className="title">Crunchyroll</p>
+					<p><img src={badgeURL('crunchyroll')} alt="crunchyroll" /></p>
+					<pre><code>{generateCode('crunchyroll', badgeURL('crunchyrull'))}</code></pre>
 				
 					<p className="mb-1">For endpoint details, go to <Link className="link" href="/docs">the docs</Link>.</p>
 				</div>
