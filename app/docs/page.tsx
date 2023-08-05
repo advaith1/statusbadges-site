@@ -282,7 +282,7 @@ export default function Start() {
 							<tr>
 								<td>label</td>
 								<td>the text on the left side</td>
-								<td>listening to</td>
+								<td>watching</td>
 							</tr>
 							<tr>
 								<td>fallback</td>
@@ -306,7 +306,7 @@ export default function Start() {
 							</tr>
 							<tr>
 								<td>hideLogo</td>
-								<td>whether to disable the Spotify logo</td>
+								<td>whether to disable the Crunchyroll logo</td>
 								<td>false</td>
 							</tr>
 						</tbody>
