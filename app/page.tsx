@@ -19,6 +19,7 @@ export default function Home() {
 			</section>
 
 			<section className="has-text-centered">
+				<noscript><p>You must enable JavaScript to log in.</p></noscript>
 				<Link className="button is-primary cta" href="/start">
 					<span className="icon is-small">
 						<FontAwesomeIcon icon={faRocket} />

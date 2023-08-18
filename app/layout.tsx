@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './style.sass'
 import Header from './header'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Suspense><Header /></Suspense>
+				<Header />
 				{children}
 			</body>
 		</html>
